@@ -64,7 +64,7 @@ class Room(core_models.AbstractTimeStampedModel):
 
     """ Room Model Definition """
 
-    # Required Field
+    # Required Fields
     name = models.CharField(max_length=140)
     description = models.TextField()
     price = models.IntegerField()
@@ -79,6 +79,8 @@ class Room(core_models.AbstractTimeStampedModel):
     check_out = models.TimeField()
     instant_book = models.BooleanField(default=False)
     host = models.ForeignKey("users.User", on_delete=models.CASCADE)
+
+    # Not Required Fields
     room_type = models.ForeignKey("RoomType", on_delete=models.SET_NULL, null=True)
     amenities = models.ManyToManyField("Amenity", blank=True)
     facilites = models.ManyToManyField("Facility", blank=True)
