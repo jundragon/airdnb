@@ -16,6 +16,7 @@ class ReservationModel(core_models.AbstractTimeStampedModel):
         (STATUS_CANCELED, "Canceled"),
     )
 
+    # Required Fields
     status = models.CharField(
         max_length=12, choices=STATUS_CHOICES, default=STATUS_PENDING
     )
