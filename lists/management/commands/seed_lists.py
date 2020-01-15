@@ -12,7 +12,7 @@ NAME = "lists"
 
 class Command(BaseCommand):
 
-    help = f"This command creates {NAME} "
+    help = f"This command creates {NAME}"
 
     def add_arguments(self, parser):
         parser.add_argument(
