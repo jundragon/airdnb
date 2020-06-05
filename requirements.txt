@@ -3,7 +3,7 @@ asgiref==3.2.3
 attrs==19.3.0
 black==19.10b0
 Click==7.0
-Django==3.0.3
+Django==3.0.7
 django-countries==5.5
 django-seed==0.1.9
 entrypoints==0.3
